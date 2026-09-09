@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: This project repository
-- Live Site URL: Not deployed yet
+- Live Site URL: [Live Here](https://cliff-de-tech.github.io/blog-preview-card-main/)
 
 ## My Process
 
