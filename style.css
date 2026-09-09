@@ -1,3 +1,11 @@
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 7%);
+  --color-gray: hsl(0, 0%, 42%);
+  --card-radius: 20px;
+  --card-shadow: 10px 10px 0 var(--color-black);
+}
 *,
 *::before,
 *::after {
@@ -6,7 +14,7 @@
 body {
     font-family: 'Figtree', sans-serif;
     min-height: 100vh;
-    background-color: hsl(47, 88%, 63%);
+    background-color: var(--color-yellow);
     margin: 0;
 }
 main {
@@ -18,26 +26,24 @@ main {
     display: flex;
     flex-direction: column;
     width: min(28rem, calc(100% - 2rem));
-    max-width: 28rem;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 20px;
-    border: 2px solid hsl(0, 0%, 7%);
-    box-shadow: 10px 10px 0px black;
+    background-color: var(--color-white);
+    border-radius: var(--card-radius);
+    border: 2px solid var(--color-black);
+    box-shadow: var(--card-shadow);
     overflow: hidden;
 }
 .card__image {
     display: block;
-    box-sizing:border-box;
     width: 90%;
     height: auto;
-    border-radius: 20px;
-    margin: 2rem auto 1rem;
+    border-radius: var(--card-radius);
+    margin: clamp(1rem, 5vw, 2rem) auto 1rem;
 }
 .card__content {
     padding: 1.5rem;
 }
 .card__title {
-    background-color: hsl(47, 88%, 63%);
+    background-color: var(--color-yellow);
     display: inline-block;
     text-align: center;
     padding: 0.25rem 0.5rem;
@@ -48,25 +54,25 @@ main {
 }
 .card__description {
     font-size: 1rem;
-    color: hsl(0, 0%, 7%);
+    color: var(--color-black);
     margin: 0;
     font-weight: 500;
 }
 .card__text-heading {
     font-size: 1.5rem;
     font-weight: 800;
-    color: hsl(0, 0%, 7%);
+    color: var(--color-black);
     margin: 1rem 0;
 }
 .card__text {
     font-size: 1rem;
-    color: hsl(0, 0%, 42%);
+    color: var(--color-gray);
     margin: 0.5rem 0;
 }
 .card__author{
     display: flex;
     align-items: center;
-    margin-top: 2rem;
+    margin-block-start: 2rem;
     gap: 1rem;
     font-weight: 800;
 }
